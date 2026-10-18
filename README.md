@@ -34,7 +34,6 @@ Official operations manuals in vector PDF format are available for all 8 languag
 
 ## 🌟 Key Features
 
-- **🛡️ Hardened Security & Native C/C++ Engine:** Enterprise-grade Application Security with ephemeral cryptographic session authorization (`X-QSL-Token`), local loopback isolation, hardware-tied at-rest credential vault (PBKDF2 50,000 iterations), and native C/C++ compiled binaries resistant to reverse engineering.
 - **🌍 Native Multilingual Interface:** Complete internationalization across 8 languages with strict HAM radio jargon and CJK typography support.
 - **🎨 Visual Drag & Drop Canvas Studio:** Interactive WYSIWYG canvas powered by Fabric.js with magnetic smart alignment guides, layering controls, rotation, and typography styling.
 - **🖼️ High-Resolution Pillow Renderer:** Generates physical-grade 300 DPI QSL cards meeting standard IARU 140×90mm specifications.
