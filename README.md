@@ -35,10 +35,10 @@ Official operations manuals in vector PDF format are available for all 8 languag
 ## 🌟 Key Features
 
 - **🌍 Native Multilingual Interface:** Complete internationalization across 8 languages with strict HAM radio jargon and CJK typography support.
-- **🎨 Visual Drag & Drop Canvas Studio:** Interactive WYSIWYG canvas powered by Fabric.js with magnetic smart alignment guides, layering controls, rotation, and typography styling.
+- **🎨 Visual Drag & Drop Canvas Studio:** Interactive WYSIWYG canvas with magnetic smart alignment guides, layering controls, rotation, and typography styling.
 - **🖼️ High-Resolution Pillow Renderer:** Generates physical-grade 300 DPI QSL cards meeting standard IARU 140×90mm specifications.
 - **🔄 Universal Log Converter:** Seamless two-way conversion across ADIF (`.adi`, `.adif`), Cabrillo (`.cbr`, `.log`), CSV, and EDI formats. Compatible with Log4OM, N1MM+, Logger32, HRD, WSJT-X, JTDX, and QRZ.com.
-- **✉️ Automated E-QSL Mailer:** High-throughput batch email dispatcher supporting TA2LE Verified Relay, direct SMTP (Gmail, Outlook), and Microsoft 365 Graph API.
+- **✉️ Automated E-QSL Mailer:** High-throughput batch email dispatcher supporting Qsl Studio Pro Verified Relay, direct SMTP (Gmail, Outlook), and Microsoft 365 Graph API.
 - **⚡ UDP Live Logger Bridge:** Intercepts real-time QSOs from WSJT-X, JTDX, and N1MM+ Logger via UDP multicast/unicast on ports `2237` / `2333`.
 - **🏷️ Multi-Profile Station Manager:** Manage portable (`/P`), club (`YM2LE`), and mobile stations with custom gridsquares, QTHs, and default card designs.
 - **🖨️ Multi-Card PDF Export:** Automatically composes 4 QSL cards per A4 sheet or prints standard 24-up Avery adhesive labels.
