@@ -10,7 +10,7 @@ Developed with passion by **Haluk Yetkin (TA2LE)**.
 
 ---
 
-## ⚡ Direct Download Links (Latest v2.0.6)
+## ⚡ Direct Download Links (Latest v2.1.0)
 
 Visit the [**Official GitHub Releases Page**](https://github.com/hyetkin/qsl-studio/releases/latest) to download the package for your platform:
 
@@ -23,8 +23,18 @@ Visit the [**Official GitHub Releases Page**](https://github.com/hyetkin/qsl-stu
 
 ---
 
+## 🌍 Multilingual Support & Documentation
+
+QSL Studio Pro provides native internationalization adhering strictly to amateur radio conventions across 8 languages:
+- 🇬🇧 **English** | 🇹🇷 **Türkçe** | 🇩🇪 **Deutsch** | 🇪🇸 **Español** | 🇯🇵 **日本語** | 🇮🇹 **Italiano** | 🇫🇷 **Français** | 🇵🇹 **Português**
+
+Official operations manuals in vector PDF format are available for all 8 languages on the [Releases Page](https://github.com/hyetkin/qsl-studio/releases/latest).
+
+---
+
 ## 🌟 Key Features
 
+- **🌍 Native Multilingual Interface:** Complete internationalization across 8 languages with strict HAM radio jargon and CJK typography support.
 - **🎨 Visual Drag & Drop Canvas Studio:** Interactive WYSIWYG canvas powered by Fabric.js with magnetic smart alignment guides, layering controls, rotation, and typography styling.
 - **🖼️ High-Resolution Pillow Renderer:** Generates physical-grade 300 DPI QSL cards meeting standard IARU 140×90mm specifications.
 - **🔄 Universal Log Converter:** Seamless two-way conversion across ADIF (`.adi`, `.adif`), Cabrillo (`.cbr`, `.log`), CSV, and EDI formats. Compatible with Log4OM, N1MM+, Logger32, HRD, WSJT-X, JTDX, and QRZ.com.
