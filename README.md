@@ -38,7 +38,6 @@ Official operations manuals in vector PDF format are available for all 8 languag
 
 - **⚡ Asynchronous Real-Time Logger:** Listens over UDP on port 2333 for live QSO broadcasts from WSJT-X, JTDX, N1MM+, Log4OM, Logger32, and HRD via a decoupled worker queue that never blocks the socket loop.
 - **🏷️ Station Profile & Template Auto-Matching:** Automatically binds incoming QSOs to their corresponding station profile (e.g. `TA2LE/P` vs `TA2LE`) and generates the card with the profile's dedicated template (`pota_sota`, `classic_dx`) and relay token.
-- **🛡️ QRZ Stealth Queue & Human Pacing:** Prevents Cloudflare 403 / 429 rate limit blocks with randomized human-like jitter (2.8s–5.2s), burst braking (15s–28s pauses every 12–18 queries), and a 120-query session safety cap.
 - **🔍 RFC 2606 Clean Data Filtering:** Automatically detects and strips placeholder emails (`@example.com`, `@example.org.tr`, `.test`, `.invalid`), ensuring reliable email resolution and delivery.
 - **🧭 CEPT & Multi-Station DXCC Resolver:** Comprehensive ITU prefix engine resolving Turkish call districts (1–0), US call areas, and portable/mobile/CEPT variants (`/P`, `/M`, `/MM`, `/4`, `DL/TA2LE`) into dedicated cards and accurate DXCC flags.
 - **✉️ Selective Card & E-QSL Dispatching:** Interactive multi-select checkboxes, master toggle header, gallery selection tags, and quick filter pills (`All`, `Ready Only`, `Deselect All`) with dynamic recipient counts.
