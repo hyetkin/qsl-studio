@@ -4,22 +4,24 @@
 [![Platform](https://img.shields.io/badge/Platforms-macOS%20%7C%20Windows%20%7C%20Linux-emerald)]()
 [![License](https://img.shields.io/badge/License-Proprietary%20%2F%20Freeware-purple)]()
 
-**QSL STUDIO PRO** is a modern, standalone desktop workstation designed for amateur radio operators worldwide. It combines visual drag-and-drop QSL card designing, high-speed multi-format log conversion (ADIF, Cabrillo, CSV, EDI), batch card generation with subpixel typography, and automated e-QSL emailing.
+**QSL STUDIO PRO** is an advanced, standalone desktop workstation designed for amateur radio operators worldwide. It combines visual drag-and-drop QSL card designing, high-speed multi-format log conversion (ADIF, Cabrillo, CSV, EDI), batch card generation with subpixel typography, automated e-QSL emailing, and intelligent online QSO data enrichment.
 
 Developed with passion by **Haluk Yetkin (TA2LE)**.
 
 ---
 
-## ⚡ Direct Download Links (Latest v2.2.0)
+## ⚡ Direct Download Links (Latest v2.3.1)
 
-Visit the [**Official GitHub Releases Page**](https://github.com/hyetkin/qsl-studio/releases/latest) to download the package for your platform:
+Visit the [**Official GitHub Releases Page**](https://github.com/hyetkin/qsl-studio/releases/tag/v2.3.1) to download the package for your platform:
 
-| Platform | Format | Description | Download Link |
+| Platform | Format | Description | Direct Download Link |
 | :--- | :--- | :--- | :--- |
-| 🍏 **macOS** | `.dmg` | Apple Silicon (M1/M2/M3/M4) & Intel Universal | [Download DMG](https://github.com/hyetkin/qsl-studio/releases/latest) |
-| 🪟 **Windows** | `.exe` | Windows 10 / 11 64-bit Setup Installer | [Download Setup](https://github.com/hyetkin/qsl-studio/releases/latest) |
-| 🐧 **Linux** | `.AppImage` | Universal self-contained executable for all distros | [Download AppImage](https://github.com/hyetkin/qsl-studio/releases/latest) |
-| 🐧 **Linux** | `.deb` | Debian, Ubuntu, Linux Mint native package | [Download DEB](https://github.com/hyetkin/qsl-studio/releases/latest) |
+| 🍏 **macOS** | `.dmg` | Apple Silicon (M1/M2/M3/M4) & Intel Universal | [QSLStudio-v2.3.1-macOS-Universal.dmg](https://github.com/hyetkin/qsl-studio/releases/download/v2.3.1/QSLStudio-v2.3.1-macOS-Universal.dmg) |
+| 🪟 **Windows (Setup)** | `.exe` | Windows 10 / 11 64-bit Installer | [QSLStudio-v2.3.1-Setup-x64.exe](https://github.com/hyetkin/qsl-studio/releases/download/v2.3.1/QSLStudio-v2.3.1-Setup-x64.exe) |
+| 🪟 **Windows (Portable)**| `.zip` | Windows 10 / 11 64-bit Standalone (No Install) | [QSLStudio-v2.3.1-Windows-x64-Portable.zip](https://github.com/hyetkin/qsl-studio/releases/download/v2.3.1/QSLStudio-v2.3.1-Windows-x64-Portable.zip) |
+| 🐧 **Linux (AppImage)** | `.AppImage` | Universal executable for all distributions | [QSLStudio-v2.3.1-Linux-x86_64.AppImage](https://github.com/hyetkin/qsl-studio/releases/download/v2.3.1/QSLStudio-v2.3.1-Linux-x86_64.AppImage) |
+| 🐧 **Linux (DEB)** | `.deb` | Debian, Ubuntu, Linux Mint native package | [qsl-studio_2.3.1_amd64.deb](https://github.com/hyetkin/qsl-studio/releases/download/v2.3.1/qsl-studio_2.3.1_amd64.deb) |
+| 🛡️ **Checksums** | `.txt` | SHA-256 package verification checksums | [SHA256SUMS.txt](https://github.com/hyetkin/qsl-studio/releases/download/v2.3.1/SHA256SUMS.txt) |
 
 ---
 
@@ -28,17 +30,23 @@ Visit the [**Official GitHub Releases Page**](https://github.com/hyetkin/qsl-stu
 QSL Studio Pro provides native internationalization adhering strictly to amateur radio conventions across 8 languages:
 - 🇬🇧 **English** | 🇹🇷 **Türkçe** | 🇩🇪 **Deutsch** | 🇪🇸 **Español** | 🇯🇵 **日本語** | 🇮🇹 **Italiano** | 🇫🇷 **Français** | 🇵🇹 **Português**
 
-Official operations manuals in vector PDF format are available for all 8 languages on the [Releases Page](https://github.com/hyetkin/qsl-studio/releases/latest).
+Official operations manuals in vector PDF format are available for all 8 languages on the [Releases Page](https://github.com/hyetkin/qsl-studio/releases/tag/v2.3.1).
 
 ---
 
 ## 🌟 Key Features
 
-- **🌍 Native Multilingual Interface:** Complete internationalization across 8 languages with strict HAM radio jargon and CJK typography support.
+- **🛡️ QRZ Stealth Queue & Anti-Ban Human Pacing:** Prevents Cloudflare 403 / 429 rate limits and residential IP bans with adaptive randomized jitter (2.8s – 5.2s), burst braking (natural reading pauses every 12–18 queries), batch callsign deduplication, and in-app `[Pause]`, `[Resume]`, and `[Cancel]` controls.
+- **⚡ 1-Click QRZ Web Session & Email De-Obfuscation:** Automated one-click authentication with native reverse-noise decoding (`showqem`) for free accounts, safely gated with ToS compliance.
+- **🔍 RFC 2606 Clean Data Filtering:** Automatically detects and strips placeholder emails (`@example.com`, `@example.org.tr`, `.test`, `.invalid`), ensuring reliable email resolution and delivery.
+- **🧭 CEPT & Multi-Station DXCC Resolver:** Comprehensive ITU prefix engine resolving Turkish call districts (1–0), US call areas, and portable/mobile/CEPT variants (`/P`, `/M`, `/MM`, `/4`, `DL/TA2LE`) into dedicated cards and accurate DXCC flags.
+- **✉️ Selective Card & E-QSL Dispatching:** Interactive multi-select checkboxes, master toggle header, gallery selection tags, and quick filter pills (`All`, `Ready Only`, `Deselect All`) with dynamic recipient counts.
+- **💾 Native OS File Save Dialogs:** Integrated with native macOS `NSSavePanel`, Windows `SaveFileDialog`, and Linux `zenity`/`kdialog` file choosers for rock-solid ADIF, PDF, and label exports.
+- **🔑 Multi-Station Security Key Vault:** Seamless token inheritance for base/portable variants (`TA2LE/P` shares `TA2LE` license) with encrypted at-rest storage and self-healing token verification.
 - **🎨 Visual Drag & Drop Canvas Studio:** Interactive WYSIWYG canvas with magnetic smart alignment guides, layering controls, rotation, and typography styling.
 - **🖼️ High-Resolution Pillow Renderer:** Generates physical-grade 300 DPI QSL cards meeting standard IARU 140×90mm specifications.
 - **🔄 Universal Log Converter:** Seamless two-way conversion across ADIF (`.adi`, `.adif`), Cabrillo (`.cbr`, `.log`), CSV, and EDI formats. Compatible with Log4OM, N1MM+, Logger32, HRD, WSJT-X, JTDX, and QRZ.com.
-- **✉️ Automated E-QSL Mailer:** High-throughput batch email dispatcher supporting Qsl Studio Pro Verified Relay, direct SMTP (Gmail, Outlook), and Microsoft 365 Graph API.
+- **✉️ Automated E-QSL Mailer:** High-throughput batch email dispatcher supporting QSL Studio Pro Verified Relay, direct SMTP (Gmail, Outlook), and Microsoft 365 Graph API.
 - **⚡ UDP Live Logger Bridge:** Intercepts real-time QSOs from WSJT-X, JTDX, and N1MM+ Logger via UDP multicast/unicast on ports `2237` / `2333`.
 - **🏷️ Multi-Profile Station Manager:** Manage portable (`/P`), club (`YM2LE`), and mobile stations with custom gridsquares, QTHs, and default card designs.
 - **🖨️ Multi-Card PDF Export:** Automatically composes 4 QSL cards per A4 sheet or prints standard 24-up Avery adhesive labels.
