@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-green.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-Proprietary%20%2F%20Amateur%20Radio-orange.svg)](#)
 
-A modern, standalone cross-platform Amateur Radio Desktop Workstation for QSL Card Designing, WYSIWYG Drag-and-Drop Editing, Universal ADIF/CSV/Cabrillo Log Conversion, Printable A4 PDF Export, High-Speed Asynchronous E-QSL Delivery, QRZ Stealth Online Enrichment, Dual-Sided Studio, IARU Bureau Sorting & Shipping Label Generation, ClubLog Integration, and Real-Time Station Dashboard.
+A modern, standalone cross-platform Amateur Radio Desktop Workstation for QSL Card Designing, WYSIWYG Drag-and-Drop Editing, Universal ADIF/CSV/Cabrillo Log Conversion, Printable A4 PDF Export, High-Speed Asynchronous E-QSL Delivery, Dual-Sided Studio, IARU Bureau Sorting & Shipping Label Generation, ClubLog Integration, and Real-Time Station Dashboard.
 
 Developed by **Haluk Yetkin (TA2LE)**.
 
@@ -25,30 +25,6 @@ QSL Studio Pro runs as a **native standalone desktop application** with zero Pyt
 
 ---
 
-## 🚀 Running from Source (Developers)
-
-```bash
-# Clone the repository
-git clone https://github.com/hyetkin/qsl-studio-pro.git
-cd qsl-studio-pro
-
-# Set up Python virtual environment
-python3 -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Launch Native Desktop Application
-python app.py
-```
-
-> **Note for Headless / Browser Mode:**
-> * By default, QSL Studio Pro launches in a dedicated **Native Desktop Window** (`pywebview`).
-> * To open in your default web browser instead: `python app.py --browser`
-> * To run in headless server mode (no window, no browser): `python app.py --no-browser` (binds to `http://127.0.0.1:8765`).
-
----
 
 ## ✨ Key Features (v3.0.0 Next-Gen)
 
@@ -89,15 +65,3 @@ python app.py
    - Automatic byte-vs-character length correction for non-ASCII UTF-8 strings.
    - Print export: **A4 4-up QSL Cards PDF** (with crop marks) and **A4 24-up QSO / Address Labels PDF**.
 
-8. **QRZ Stealth Online Enrichment:**
-   - Human-paced querying (jitter & burst brakes) and session safety caps preventing Cloudflare rate limits.
-   - Batch callsign deduplication slashing redundant traffic.
-
----
-
-## 🛠️ Automated CI/CD & Multi-Platform Packaging
-
-This project uses an automated GitHub Actions matrix workflow (`.github/workflows/build_and_release.yml`):
-* **Quality Gate:** 238 automated unit, AppSec & integration tests run in parallel across Ubuntu, Windows, and macOS (Python 3.11 & 3.12).
-* **Multi-Platform Build:** Automatically compiles Windows Inno Setup installers, macOS DMGs, and Linux .deb / AppImages.
-* **Release Publishing:** Automated signing, checksum generation (SHA-256), and multi-platform binary asset attachment.
